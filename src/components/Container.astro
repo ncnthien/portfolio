@@ -76,40 +76,6 @@ import Card from "./Card.astro";
     }
   </AccordionLayout>
 
-  <AccordionLayout title={"Blogs/Writings"} icon={"ic:round-edit-note"}>
-    {
-      CONTENT.blogs.map((item) => {
-        return (
-          <Card
-            title={item.title}
-            timeframe={item.date}
-            description={item.description}
-            tags=""
-            url={item.url}
-            url_name={item.publisher}
-          />
-        );
-      })
-    }
-  </AccordionLayout>
-
-  <AccordionLayout title={"Achievements"} icon={"mdi:trophy-award"}>
-    {
-      CONTENT.achievements.map((item) => {
-        return (
-          <Card
-            title={item.title}
-            timeframe={item.year}
-            description={item.decription}
-            tags=""
-            url="#"
-            url_name=""
-          />
-        );
-      })
-    }
-  </AccordionLayout>
-
   <AccordionLayout title={"Contact"} icon={"ri:contacts-book-fill"}>
     {
       CONTENT.contact.map((item) => {
