@@ -1,7 +1,7 @@
 ---
 import * as CONTENT from "./content";
 import Container from "../components/Container.astro";
-import Header from "../components/Header.astro";
+import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.astro";
 ---
 
@@ -20,7 +20,7 @@ import Footer from "../components/Footer.astro";
     <title>ncnthien</title>
   </head>
   <body class="bg-background text-text flex flex-col min-h-screen">
-    <Header />
+    <Header client:only />
 
     <!-- Bar Effect -->
     <article
